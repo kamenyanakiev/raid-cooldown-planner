@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {SPELLS_IMG} from 'shared/constants/spells-image-paths.constants';
+import {SPELLS_IMG} from '@app/shared/constants/spells-image-paths.constants';
 
 @Component({
   selector: 'rcp-raid-table',
