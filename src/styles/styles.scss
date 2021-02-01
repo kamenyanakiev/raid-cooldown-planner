@@ -1,4 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'src/styles/_variables';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: lightgray;}
+
+.death_knight_bg {
+    background-color: $death-knight;
+  }
+  
+  .demon_hunter_bg {
+    background-color: $demon-hunter;
+  }
+  
+  .druid_bg {
+    background-color: $druid;
+  }
+  
+  .hunter_bg {
+    background-color: $hunter;
+  }
+  
+  .mage_bg {
+    background-color: $mage;
+  }
+  
+  .monk_bg {
+    background-color: $monk;
+  }
+  
+  .paladin_bg {
+    background-color: $paladin;
+  }
+  
+  .priest_bg {
+    background-color: $priest;
+  }
+  
+  .rogue_bg {
+    background-color: $rogue;
+  }
+  
+  .shaman_bg {
+    background-color: $shaman;
+  }
+  
+  .warrior_bg {
+    background-color: $warrior;
+  }
+  
+  .warlock_bg {
+    background-color: $warlock;
+  }

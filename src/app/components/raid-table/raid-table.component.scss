@@ -1,3 +1,28 @@
-table, th, td {
-  border: 1px solid black;
+@import 'src/styles/_variables';
+
+.raid-table-container {
+  border-left: 1px solid black;
+  .raid-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 2fr;
+    grid-auto-rows: minmax(60px, auto);
+    .raid-table-player {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+    .table-event-border {
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+  }
+  .event-name, .event-time {
+    background-color: white;
+  }
+  .raid-table:first-child {
+    span {
+      border-top: 1px solid black;
+    }
+  }
 }
+

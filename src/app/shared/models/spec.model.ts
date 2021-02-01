@@ -3,6 +3,7 @@ export interface Spec {
     icon: string;
     spells: any[];
     name: string;
+    specId: string;
 }
 
 export interface Spell {

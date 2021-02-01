@@ -1,4 +1,21 @@
 export const SPELLS_IMG: {[key: string]: string} = {
     ALL_PERSONALS: 'assets/images/spell-icons',
-    HOLY_AVENGER: 'assets/images/spell-icons/paladin_holyavenger.jpg'
+    HOLY_AVENGER: 'assets/images/spell-icons/paladin_holyavenger.jpg',
+    AVENGING_CRUSADER: 'assets/images/spell-icons/paladin_avengingcrusader.jpg',
+    AURA_MASTERY: 'assets/images/spell-icons/paladin_auramastery.jpg',
+    AVENGING_WRATH: 'assets/images/spell-icons/paladin_avenginewrath.jpg',
+    POWER_WORD_BARRIER: 'assets/images/spell-icons/priest_powerwordbarrier.jpg',
+    EVANGELISM: 'assets/images/spell-icons/priest_evangelism.jpg',
+    SHADOWFIEND: 'assets/images/spell-icons/priest_shadowfiend.jpg',
+    RAPTURE: 'assets/images/spell-icons/priest_rapture.jpg',
+    SPIRIT_SHELL: 'assets/images/spell-icons/priest_spiritshell.jpg',
+    RADIANCE: 'assets/images/spell-icons/priest_radiance.jpg',
+    HEALING_TIDE_TOTEM: 'assets/images/spell-icons/shaman_healingtide.jpg',
+    ANCESTRAL_PROTECTION_TOTEM: 'assets/images/spell-icons/shaman_ancestralprotection.jpg',
+    ASCENDANCE: 'assets/images/spell-icons/shaman_ascendance.jpg',
+    SPIRIT_LINK: 'assets/images/spell-icons/shaman_spiritlink.jpg',
+    HEART_OF_THE_WILD: 'assets/images/spell-icons/druid_heartofthewild.jpg',
+    TRANQUILITY: 'assets/images/spell-icons/druid_tranquility.jpg',
+    TREE_OF_LIFE: 'assets/images/spell-icons/druid_incarnaton.jpg',
+    FLOURISH: 'assets/images/spell-icons/druid_flourish.jpg',
 };
