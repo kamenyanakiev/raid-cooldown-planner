@@ -1,6 +1,11 @@
-<table>
-  <tr *ngFor='let event of data' class='table-row'>
-    <td>{{event.name}}</td>
-    <td>{{event.time}}</td>
-  </tr>
-</table>
+<div>
+  <div *ngFor='let event of data$ | async' class='table-row'>
+    <span>{{event.name}}</span>
+    <span>{{event.time}}</span>
+    <div style="display: inline-block; background-color: red;" *ngFor='let action of event.actions'>
+      <span>{{action.player}}</span>
+      <span>{{action.spell.name}}</span>
+      <span><img [src]='action.spell.icon' alt=""></span>
+    </div>
+  </div>
+</div>
