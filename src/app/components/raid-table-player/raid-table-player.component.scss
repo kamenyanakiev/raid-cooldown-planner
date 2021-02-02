@@ -1,0 +1,39 @@
+
+.raid-table-player {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: space-between;
+  .player-name-container {
+    flex: 30%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .player-name {
+      font-size: 14px;
+      align-self: center;
+      height: fit-content;
+    }
+  }
+  .player-spell-container {
+    flex: 40%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .player-spell {
+      font-size: 14px;
+      align-self: center;
+      height: fit-content;
+    }
+  }
+  .player-spell-icon {
+    flex: auto;
+    img {
+      align-self: center;
+      height: 100%;
+      width: auto;
+    }
+  }
+}

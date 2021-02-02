@@ -6,7 +6,9 @@ export enum Specs {
   DISCIPLINE_PRIEST = 'DISCIPLINE_PRIEST',
   RESTORATION_SHAMAN = 'RESTORATION_SHAMAN',
   RESTORATION_DRUID = 'RESTORATION_DRUID',
-  HOLY_PRIEST = 'HOLY_PRIEST'
+  HOLY_PRIEST = 'HOLY_PRIEST',
+  MISTWEAVER_MONK = 'MISTWEAVER_MONK',
+  WARRIOR = 'WARRIOR',
 }
 
 export const SPEC_DETAILS: {[key in keyof typeof Specs]: Spec} = {
@@ -44,8 +46,22 @@ export const SPEC_DETAILS: {[key in keyof typeof Specs]: Spec} = {
   [Specs.HOLY_PRIEST]: {
     color: 'FFFFFF',
     icon: '',
-    spells: [],
+    spells: [SPELLS_DETAILS.HOLY_WORD_SALVATION, SPELLS_DETAILS.DIVINE_HYMN, SPELLS_DETAILS.APOTHEOSIS],
     name: 'Holy Priest',
     specId: Specs.HOLY_PRIEST
-  }
+  },
+  [Specs.MISTWEAVER_MONK]: {
+    color: '00FF96',
+    icon: '',
+    spells: [SPELLS_DETAILS.REVIVAL],
+    name: 'Mistweaver Monk',
+    specId: Specs.MISTWEAVER_MONK
+  },
+  [Specs.WARRIOR]: {
+    color: 'c79c6e',
+    icon: '',
+    spells: [SPELLS_DETAILS.RALLYING_CRY],
+    name: 'Warrior',
+    specId: Specs.WARRIOR
+  },
 };

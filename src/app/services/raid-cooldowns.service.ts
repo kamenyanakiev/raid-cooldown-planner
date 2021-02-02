@@ -25,7 +25,12 @@ constructor() { }
             specId: SPEC_DETAILS.RESTORATION_SHAMAN.specId,
             player: 'Kriz',
             spell: SPELLS_DETAILS.ASCENDANCE
-          }
+          },
+          { spec: SPEC_DETAILS.MISTWEAVER_MONK.name,
+            specId: SPEC_DETAILS.MISTWEAVER_MONK.specId,
+            player: 'Wshh',
+            spell: SPELLS_DETAILS.REVIVAL
+          },
         ]
       },
       {
@@ -37,10 +42,10 @@ constructor() { }
             player: 'Racor',
             spell: SPELLS_DETAILS.AVENGING_CRUSADER
           },
-          { spec: SPEC_DETAILS.DISCIPLINE_PRIEST.name,
-            specId: SPEC_DETAILS.DISCIPLINE_PRIEST.specId,
+          { spec: SPEC_DETAILS.HOLY_PRIEST.name,
+            specId: SPEC_DETAILS.HOLY_PRIEST.specId,
             player: 'Octo',
-            spell: SPELLS_DETAILS.RADIANCE
+            spell: SPELLS_DETAILS.APOTHEOSIS
           }
         ]
       },
@@ -52,7 +57,12 @@ constructor() { }
             specId: SPEC_DETAILS.RESTORATION_DRUID.specId,
             player: 'Moon',
             spell: SPELLS_DETAILS.FLOURISH
-          }
+          },
+          { spec: SPEC_DETAILS.WARRIOR.name,
+            specId: SPEC_DETAILS.WARRIOR.specId,
+            player: 'Dredd',
+            spell: SPELLS_DETAILS.RALLYING_CRY
+          },
         ]
       }
     ]);

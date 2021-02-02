@@ -20,6 +20,11 @@ export enum Spells {
   TRANQUILITY = 'TRANQUILITY',
   TREE_OF_LIFE = 'TREE_OF_LIFE',
   FLOURISH = 'FLOURISH',
+  REVIVAL = 'REVIVAL',
+  HOLY_WORD_SALVATION = 'HOLY_WORD_SALVATION',
+  DIVINE_HYMN = 'DIVINE_HYMN',
+  APOTHEOSIS = 'APOTHEOSIS',
+  RALLYING_CRY = 'RALLYING_CRY',
 }
 
 export const SPELLS_DETAILS: { [key in keyof typeof Spells]: Spell } = {
@@ -129,6 +134,36 @@ export const SPELLS_DETAILS: { [key in keyof typeof Spells]: Spell } = {
     id: '{spell:197721}',
     icon: SPELLS_IMG.FLOURISH,
     name: 'Flourish',
+    cooldown: 90,
+  },
+  [Spells.REVIVAL]: {
+    id: '{spell:115310}',
+    icon: SPELLS_IMG.REVIVAL,
+    name: 'Revival',
+    cooldown: 180,
+  },
+  [Spells.HOLY_WORD_SALVATION]: {
+    id: '{spell:265202}',
+    icon: SPELLS_IMG.HOLY_WORD_SALVATION,
+    name: 'Holy Word: Salvation',
+    cooldown: 300,
+  },
+  [Spells.DIVINE_HYMN]: {
+    id: '{spell:64843}',
+    icon: SPELLS_IMG.DIVINE_HYMN,
+    name: 'Divine Hymn',
+    cooldown: 180,
+  },
+  [Spells.APOTHEOSIS]: {
+    id: '{spell:200183}',
+    icon: SPELLS_IMG.APOTHEOSIS,
+    name: 'Apotheosis',
+    cooldown: 120,
+  },
+  [Spells.RALLYING_CRY]: {
+    id: '{spell:97462}',
+    icon: SPELLS_IMG.RALLYING_CRY,
+    name: 'Rallying Cry',
     cooldown: 180,
   },
 };

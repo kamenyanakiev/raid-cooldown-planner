@@ -2,10 +2,11 @@
   <div *ngFor='let event of data$ | async' class='raid-table'>
     <span class='table-event-border event-name'>{{event.name}}</span>
     <span class='table-event-border event-time'>{{event.time}}</span>
-    <div *ngFor='let action of event.actions' class='raid-table-player table-event-border' [ngClass]="backgroundClass(action.specId)">
-      <span>{{action.player}}</span>
-      <span>{{action.spell.name}}</span>
-      <span><img [src]='action.spell.icon' alt=""></span>
-    </div>
+    <rcp-raid-table-player
+      class='raid-table-player-container table-event-border'
+      *ngFor='let action of event.actions'
+      [action]='action'
+      [ngClass]="backgroundClass(action.specId)">
+    </rcp-raid-table-player>
   </div>
 </div>

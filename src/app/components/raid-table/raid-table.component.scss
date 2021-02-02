@@ -6,10 +6,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr 2fr 2fr;
     grid-auto-rows: minmax(60px, auto);
-    .raid-table-player {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      text-align: center;
+    .event-name, .event-time {
+      padding: 20px 10px;
+      font-size: 14px;
     }
     .table-event-border {
       border-right: 1px solid black;
@@ -20,9 +19,8 @@
     background-color: white;
   }
   .raid-table:first-child {
-    span {
+    .raid-table-player-container, .event-name, .event-time {
       border-top: 1px solid black;
     }
   }
 }
-

@@ -18,4 +18,9 @@ export const SPELLS_IMG: {[key: string]: string} = {
     TRANQUILITY: 'assets/images/spell-icons/druid_tranquility.jpg',
     TREE_OF_LIFE: 'assets/images/spell-icons/druid_incarnaton.jpg',
     FLOURISH: 'assets/images/spell-icons/druid_flourish.jpg',
+    REVIVAL: 'assets/images/spell-icons/monk_revival.jpg',
+    HOLY_WORD_SALVATION: 'assets/images/spell-icons/priest_salvation.jpg',
+    DIVINE_HYMN: 'assets/images/spell-icons/priest_divinehymn.jpg',
+    APOTHEOSIS: 'assets/images/spell-icons/priest_apotheosis.jpg',
+    RALLYING_CRY: 'assets/images/spell-icons/warrior_rallyingcry.jpg',
 };
