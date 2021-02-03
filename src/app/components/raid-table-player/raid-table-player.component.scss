@@ -1,19 +1,23 @@
 
 .raid-table-player {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   text-align: center;
   justify-content: space-between;
   .player-name-container {
     flex: 30%;
     border-right: 1px solid black;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     .player-name {
       font-size: 14px;
       align-self: center;
       height: fit-content;
+      background: none;
+      border: none;
+      max-width: 80px;
+      text-align: center;
     }
   }
   .player-spell-container {

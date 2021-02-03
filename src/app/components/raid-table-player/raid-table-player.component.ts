@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SPELLS_ARRAY } from '@app/shared/constants/spell-details.constants';
+import { getBackgroundClass } from '@app/shared/utils';
 
 @Component({
   selector: 'rcp-raid-table-player',
@@ -13,9 +15,13 @@ export class RaidTablePlayerComponent implements OnInit {
       icon: ''
     }
   };
+  public spells = SPELLS_ARRAY;
+  public selectedSpell = this.spells[0];
+  public getBackgroundClass = getBackgroundClass;
   constructor() { }
 
   ngOnInit() {
+    console.log(this.spells);
   }
 
 }

@@ -167,3 +167,5 @@ export const SPELLS_DETAILS: { [key in keyof typeof Spells]: Spell } = {
     cooldown: 180,
   },
 };
+
+export const SPELLS_ARRAY = Object.keys(SPELLS_DETAILS).map(key => ({key, name: SPELLS_DETAILS[key].name, icon: SPELLS_DETAILS[key]}));

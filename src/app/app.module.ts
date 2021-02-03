@@ -7,17 +7,23 @@ import { environment } from '../environments/environment';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RaidTableComponent } from './components/raid-table/raid-table.component';
 import { RaidTablePlayerComponent } from './components/raid-table-player/raid-table-player.component';
+import { NewPlayerComponent } from './components/new-player/new-player.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { FormsModule } from  '@angular/forms';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
       RaidTableComponent,
-      RaidTablePlayerComponent
+      RaidTablePlayerComponent,
+      NewPlayerComponent
    ],
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    DropdownModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

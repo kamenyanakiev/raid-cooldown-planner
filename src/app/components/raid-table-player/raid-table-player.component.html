@@ -1,12 +1,19 @@
-<div class='raid-table-player table-event-border'>
+<div class='raid-table-player table-event-border' [ngClass]="getBackgroundClass(action)">
   <div class='player-name-container'>
-    <span class='player-name'>{{action.player}}</span>
+    <input type='text' class='player-name' [value]='action.player'>
   </div>
   <div class="player-spell-container">
-    <span class='player-spell'>{{action.spell.name}}</span>
+    <p-dropdown [options]="spells" [(ngModel)]="selectedSpell" optionLabel="name">
+      <ng-template let-spell pTemplate="item">
+        <div class="country-item">
+            <img [src]="spell.icon" />
+            <div>{{spell.name}}</div>
+        </div>
+    </ng-template>
+    </p-dropdown>
   </div>
   <div class='player-spell-icon'>
-    <img [src]='action.spell.icon' alt="">
+    <img [src]='selectedSpell.icon' alt="">
   </div>
 </div>
 

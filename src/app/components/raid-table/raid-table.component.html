@@ -5,8 +5,7 @@
     <rcp-raid-table-player
       class='raid-table-player-container table-event-border'
       *ngFor='let action of event.actions'
-      [action]='action'
-      [ngClass]="backgroundClass(action.specId)">
+      [action]='action'>
     </rcp-raid-table-player>
   </div>
 </div>
