@@ -12,7 +12,8 @@ export class RaidTablePlayerComponent implements OnInit {
     player: '',
     spell: {
       name: '',
-      icon: ''
+      icon: '',
+      spec: ''
     }
   };
   public spells = SPELLS_ARRAY;
@@ -21,7 +22,7 @@ export class RaidTablePlayerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.spells);
+    // console.log(this.spells);
   }
 
 }

@@ -10,5 +10,6 @@ export interface Spell {
     id: string;
     icon: string;
     name: string;
+    spec: string;
     cooldown: number;
 }

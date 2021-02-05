@@ -1,9 +1,8 @@
 import { Specs } from './constants/spec-details.constants';
 
-export function getBackgroundClass(specId): string {
-  switch (specId) {
+export function getBackgroundClass(spec): string {
+  switch (spec) {
     case Specs.HOLY_PALADIN:
-
       return 'paladin_bg';
     case Specs.DISCIPLINE_PRIEST:
       return 'priest_bg';

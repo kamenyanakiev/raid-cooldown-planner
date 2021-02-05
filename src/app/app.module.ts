@@ -9,7 +9,7 @@ import { RaidTableComponent } from './components/raid-table/raid-table.component
 import { RaidTablePlayerComponent } from './components/raid-table-player/raid-table-player.component';
 import { NewPlayerComponent } from './components/new-player/new-player.component';
 import { DropdownModule } from 'primeng/dropdown';
-import { FormsModule } from  '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
